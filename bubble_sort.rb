@@ -6,11 +6,11 @@ def bubble_sort(array)
   
   (array.length-1).times do
     array.each_index do |num|        
-        if num < array.length-1 
-          array[num] > array[num + 1] ? sort(array, num) : next          
-        end
-      end     
-    end 
+      if num < array.length-1 
+        array[num] > array[num + 1] ? sort(array, num) : next          
+      end
+    end     
+  end 
   
   print array
 end
